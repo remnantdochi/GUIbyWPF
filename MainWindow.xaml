@@ -7,8 +7,10 @@
         xmlns:views="clr-namespace:CompactNavigationMenu.Views"
         mc:Ignorable="d"
         Height="450" Width="700" Background="#FFEAEBEC"
-        Title="Nav" WindowStartupLocation="CenterScreen">
-
+        Title="Nav" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,700,450" RadiusX="10" RadiusY="10"/>
+    </Window.Clip>
     <Window.Resources>
         <Style x:Key="NavigationContentStyle" TargetType="ContentControl">
             <Setter Property="ContentTemplate" Value="{StaticResource HomeViewTemplate}"/>
